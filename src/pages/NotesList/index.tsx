@@ -188,6 +188,7 @@ const NotesList = (props: Props) => {
               href="https://markanjogalisa.web.app/"
               target="_blank"
               style={{ textDecoration: "none" }}
+              rel="noreferrer"
             >
               Mark Galisa
             </a>

@@ -74,20 +74,25 @@ const SideBar = (props: Props) => {
               size="large"
               className="d-flex align-items-center mt-5"
             >
-              {notesColorSelection.map((color) => (
-                <Button
-                  type="primary"
-                  shape="circle"
-                  size="small"
-                  style={{ background: color.value }}
-                  className={"border-0"}
-                  onClick={() => {
-                    handleAddNote(color.value);
-                  }}
-                >
-                  {" "}
-                </Button>
-              ))}
+              {notesColorSelection.map((color) => {
+                const handleSelectColor = () => {
+                  handleToggleColorSelection();
+                  handleAddNote(color.value);
+                };
+
+                return (
+                  <Button
+                    type="primary"
+                    shape="circle"
+                    size="small"
+                    style={{ background: color.value }}
+                    className={"border-0"}
+                    onClick={handleSelectColor}
+                  >
+                    {" "}
+                  </Button>
+                );
+              })}
             </Space>
           )}
         </div>
