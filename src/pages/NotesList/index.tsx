@@ -19,6 +19,9 @@ import { generateRandomId, getPageColors } from "src/common/functions";
 import Layout, { Content, Footer } from "antd/lib/layout/layout";
 import { Col, Row } from "antd";
 
+// styles
+import "./index.scss";
+
 type Props = {
   notesList: NoteType[];
   pageSettings: PageSettingsState;
@@ -85,7 +88,7 @@ const NotesList = (props: Props) => {
       />
       <Layout className="site-layout w-100">
         <Content
-          className="site-layout-background"
+          className="note-cards-wrapper"
           style={{
             padding: 24,
             paddingTop: 0,

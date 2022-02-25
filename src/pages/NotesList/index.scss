@@ -1,0 +1,15 @@
+/* width */
+.note-cards-wrapper::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+.note-cards-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.note-cards-wrapper.note-cards-wrapper::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, 70%, #1990ff);
+  border-radius: 10px;
+}
