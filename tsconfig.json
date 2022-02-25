@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "typeRoots" : ["node_modules/@types", "src/types"],
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "noLib": false,
+    "checkJs": true,
+  },
+  "files": [
+    "./node_modules/redux-persist/types/storage/index.d.ts",
+    "./node_modules/redux-persist/types/persistReducer.d.ts"
+  ],
+  "include": [
+    "./src/**/*",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
+}
