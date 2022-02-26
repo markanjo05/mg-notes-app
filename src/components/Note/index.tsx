@@ -132,11 +132,11 @@ const Note = (props: Props) => {
             autoSize={false}
             style={{
               resize: "none",
-              height: "195px",
               fontSize: "16px",
               fontStyle: "italic",
+              height: "195px",
             }}
-            className={"ps-0 pe-0"}
+            className={"noteContent-wrapper ps-0 pe-0"}
             ref={inputRef}
           />
         ) : (
