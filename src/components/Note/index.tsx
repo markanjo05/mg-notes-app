@@ -152,7 +152,7 @@ const Note = (props: Props) => {
                 fontFamily: "inherit",
                 fontSize: "inherit",
                 height: "183px",
-                width: "270px",
+                width: "100%",
                 whiteSpace: "break-spaces",
                 wordBreak: "break-word",
               }}
