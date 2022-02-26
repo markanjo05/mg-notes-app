@@ -85,9 +85,10 @@ const SideBar = (props: Props) => {
                     type="primary"
                     shape="circle"
                     size="small"
-                    style={{ background: color.value }}
+                    style={{ background: hasOpenNotes ? "" : color.value }}
                     className={"border-0"}
                     onClick={handleSelectColor}
+                    disabled={hasOpenNotes}
                   >
                     {" "}
                   </Button>

@@ -1,3 +1,6 @@
+import { ChangeEvent, KeyboardEvent, useEffect, useRef, useState } from "react";
+
+// ant design imports
 import { Button } from "antd";
 import {
   EllipsisOutlined,
@@ -6,11 +9,17 @@ import {
   CloseOutlined,
   CheckOutlined,
 } from "@ant-design/icons";
-import { ChangeEvent, KeyboardEvent, useEffect, useRef, useState } from "react";
 import TextArea, { TextAreaRef } from "antd/lib/input/TextArea";
+
+// utils
 import moment from "moment";
-import { Note as NoteType } from "src/store/types/notes";
 import { notesColorSelection } from "src/common/constants/colors";
+
+// store imports
+import { Note as NoteType } from "src/store/types/notes";
+
+// styles
+import "./index.scss";
 
 type Props = {
   data: NoteType;
@@ -137,7 +146,16 @@ const Note = (props: Props) => {
               fontSize: "16px",
             }}
           >
-            <pre style={{ fontFamily: "inherit", fontSize: "inherit" }}>
+            <pre
+              className="noteContent-wrapper"
+              style={{
+                fontFamily: "inherit",
+                fontSize: "inherit",
+                height: "183px",
+                width: "270px",
+                whiteSpace: "break-spaces",
+              }}
+            >
               {noteContent}
             </pre>
           </div>

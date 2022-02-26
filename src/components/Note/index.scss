@@ -1,0 +1,15 @@
+/* width */
+.noteContent-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.noteContent-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.noteContent-wrapper::-webkit-scrollbar-thumb {
+  background: rgb(107, 106, 106);
+  border-radius: 20px;
+}

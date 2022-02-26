@@ -10,7 +10,7 @@ export const generateRandomId = (): string => {
 
 export const getPageColors = (isDarkMode: boolean) => {
   return {
-    sidebar: isDarkMode ? "#0D2132" : "#F5F5F5",
+    sidebar: isDarkMode ? "#0D2132" : "#F1F1F1",
     body: isDarkMode ? "#001528" : "#FFF",
     header: isDarkMode ? "#001528E8" : "#FFFFFFE8",
     text: isDarkMode ? "text-white" : "",
