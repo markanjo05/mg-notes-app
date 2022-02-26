@@ -154,6 +154,7 @@ const Note = (props: Props) => {
                 height: "183px",
                 width: "270px",
                 whiteSpace: "break-spaces",
+                wordBreak: "break-word",
               }}
             >
               {noteContent}
